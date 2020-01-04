@@ -1,0 +1,62 @@
+.list {
+  padding-bottom: 20px;
+}
+
+/* Checkbox styling */
+
+.list__category {
+  display: block;
+  position: relative;
+
+  padding-left: 35px;
+  margin-bottom: 12px;
+
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.list__category input {
+  position: absolute;
+
+  height: 0;
+  width: 0;
+
+  cursor: pointer;
+  opacity: 0;
+}
+
+.list__category__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 20px;
+  width: 19px;
+
+  border: solid #818181;
+  border-radius: 4px;
+}
+
+.list__category__checkmark::after {
+  content: "";
+  position: absolute;
+
+  display: none;
+}
+
+.list__category input:checked ~ .list__category__checkmark::after {
+  display: block;
+}
+
+.list__category .list__category__checkmark::after {
+  left: 6px;
+  top: 2px;
+
+  width: 5px;
+  height: 10px;
+
+  border: solid #818181;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}

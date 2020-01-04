@@ -1,0 +1,32 @@
+.coctails-block {
+  padding-bottom: 30px;
+}
+
+.coctails-block__title {
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.coctails-block__images {
+  display: grid;
+  grid-gap: 85px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding-top: 30px;
+}
+
+.coctails-block__images figure {
+  margin: 0;
+}
+
+.coctails-block__images img {
+  width: 100%;
+}
+
+.coctails-block__images figcaption {
+  padding-top: 20px;
+  text-align: center;
+
+  font-size: 18px;
+  line-height: 21px;
+}

@@ -1,0 +1,20 @@
+.aside {
+  padding: 30px 35px;
+}
+
+.aside button {
+  width: 100%;
+  padding: 10px;
+
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+
+  border: none;
+  border-radius: 10px;
+  background-color: #4e4e4e;
+  color: white;
+  cursor: pointer;
+}
