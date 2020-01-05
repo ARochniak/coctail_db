@@ -7,6 +7,7 @@ import './index.css';
 
 const App = () => {
   const [coctails, setCoctails] = useState(false);
+  const [mainClass, setMainClass] = useState('');
 
   return (
     <div className="app">
@@ -14,9 +15,9 @@ const App = () => {
         <Header />
       </header>
       <aside>
-        <Aside setCoctails={setCoctails} />
+        <Aside setCoctails={setCoctails} setMainClass={setMainClass} />
       </aside>
-      <main>
+      <main className={mainClass}>
         <Main coctails={coctails} />
       </main>
     </div>

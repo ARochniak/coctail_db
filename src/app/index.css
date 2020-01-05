@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 .app {
   display: grid;
@@ -34,9 +34,18 @@ main {
   border-left: 1px solid #d0d0d0;
 }
 
+.main_full-screen {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  min-height: auto;
+}
+
 aside,
 main {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 800px) {

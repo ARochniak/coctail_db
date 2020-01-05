@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 import CoctailsCategory from '../../components/CoctailsCategory';
 
 import './index.css';
 
-const Aside = ({ setCoctails }) => {
+const Aside = ({ setCoctails, setMainClass }) => {
+  const [ref, inView] = useInView({
+    threshold: 0
+  });
+
   const clickHandler = async e => {
     e.preventDefault();
     const inputs = e.target.form;
@@ -26,8 +31,12 @@ const Aside = ({ setCoctails }) => {
     setCoctails(coctails);
   };
 
+  const asideClass = inView
+    ? setMainClass('')
+    : setMainClass('main_full-screen');
+
   return (
-    <form className="aside">
+    <form className="aside" ref={ref}>
       <CoctailsCategory />
       <button onClick={clickHandler} type="submit">
         APPLY
