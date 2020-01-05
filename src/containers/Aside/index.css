@@ -18,3 +18,12 @@
   color: white;
   cursor: pointer;
 }
+
+@media (max-width: 800px) {
+  .aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

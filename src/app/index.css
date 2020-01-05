@@ -39,7 +39,7 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   aside {
     grid-column-start: 1;
     grid-column-end: 3;
